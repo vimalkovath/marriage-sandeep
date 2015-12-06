@@ -1,0 +1,793 @@
+@media only screen and (max-width: 1600px){
+	
+
+ul.nav.navbar-nav {
+    float: right;
+    margin: 0;
+	line-height:50px;
+	}
+	#slider li{
+		height:700px;
+	}
+
+}
+
+/*Styles for screen 1200px and lower*/
+@media only screen and (max-width: 1199px){
+	/*Nav section set*/
+	#main_navigation {
+		font-size:100%;
+	}
+	
+	/*Nav section set*/
+	
+	/*quotes section set*/
+	#quote-animation{
+		margin:30px 90px;
+	}
+	.container-quotes{
+		margin-top:-5%;
+	}
+	
+	/*quotes section set*/
+	
+	
+	/*countdown section set*/
+	#countdown-main{
+		margin-top:0;
+	}
+	/*countdown section set*/
+	
+	
+	/*comments blog section set*/
+	#respond input[type="text"]{
+		width:100%;
+		font-size:98%;
+	}
+	
+	#respond textarea{
+		width:100%;
+		font-size:98%;
+		margin:5px 0 5px 0;
+	}
+	.floral-blog{
+		width:100%;
+		height:auto;
+		background:none;
+		margin:0 auto;
+		padding:0;
+		border-bottom:1px solid #b2b2b2;
+	}
+	/*comments blog section set*/
+	
+	/*	Header Logo	*/
+	#logowrap{
+		width:300px;
+		height:243px;
+	}
+	.content-logo h1{
+		font-size:40px;
+		margin-bottom:5px;
+	}
+	
+	/*	Wedding Date	*/
+	.wedding-date{
+		bottom:60px;
+		width:300px;
+		height:180px;
+	}
+	.wedding-date h2{
+		font-size:32px;
+		top:28%;
+	}
+	#slider li{
+		height:600px;
+	}
+	
+}/* (max-width:1200px) */
+
+@media only screen and (min-width:992px) and (max-width:1199px){
+
+	ul.nav.navbar-nav > li{
+		width:100px;
+	}
+	ul.nav.navbar-nav > li:nth-child(1) {
+		margin: 0 0 0 300px; 
+	}
+
+
+}/*	(min-width:992px) and (max-width:1199px)	*/
+
+@media only screen and (max-width:1060px){
+	.title-ceremony {
+		font-size:20px;
+	}
+	.giftlist-id{
+		display:block;
+	}
+	.amazon-gift .col-md-4{
+		width:50%;
+		float:left;
+	}
+	.gifts-box{
+		display:none;
+	}
+}
+
+/*Styles for screen 240px and lower*/
+@media only screen and (max-width: 240px){
+	/*Rsvp section set*/
+	
+		ul.nav.navbar-nav > li:nth-child(1) {
+		margin: 0 0 0 220px; 
+	}
+	
+	.rsvp-button{
+		font-size:90% !important;
+		width:auto;
+		height:auto;
+		background:#f8b0b3;
+		padding:10px;
+		margin:0 -7px 0 0;
+		border-radius:8px;
+		-moz-border-radius:8px;
+		-webkit-border-radius:8px;
+		-o-border-radius:8px;
+
+	}
+	
+	.title-rsvp-form{
+		font-size:90% !important;
+	}
+	.lable, .rsvp-formwrap input, .sbOptions{
+		font-size:80% !important;
+	}
+	
+	.title-gifts{
+		font-size:240% !important;
+	}
+	
+	.gifts-content{
+		font-size:70% !important;
+	}
+	
+	.giftlist{
+		width:60px;
+		height:60px;
+		margin:10px auto;
+	}
+	
+	.giftlist-id{
+		font-size:80%;
+	}
+	
+	.gifts-thanks{
+		font-size:120% !important;
+		padding:10px 0;
+		width:auto;
+		height:auto;
+	}
+	/*Rsvp section set*/
+	
+	/*Blog section set*/
+	
+	.blog-img-container{
+		position:static !important;
+		margin:0 !important;
+		float:none !important;
+
+	}
+	
+	/*Blog section set*/
+}
+
+
+/*Styles for screen 320px and lower*/
+@media only screen and (max-width: 320px){
+	
+			ul.nav.navbar-nav > li:nth-child(1) {
+		margin: 0 0 0 300px; 
+	
+	
+	/*Rsvp section set*/
+}
+	.rsvp-button{
+		margin-left:-7px;
+
+	}
+	
+	.title-rsvp-form{
+		font-size:120%;
+	}
+	
+	.title-gifts{
+		font-size:300% !important;
+	}
+	
+	.gifts-content{
+		font-size:90% !important;
+	}
+	
+	.giftlist{
+		width:70px;
+		height:70px;
+		margin:10px auto;
+	}
+	
+	.giftlist-id{
+		font-size:90%;
+	}
+
+	/*Rsvp section set*/
+	
+	/*Blog section set*/
+	
+	.blog-container{
+		width:100%;
+		min-height:285px;
+		border-radius:100%;
+		padding:10px;
+	}
+	.blog-content{
+		width:80%;
+		height:auto;
+		margin:40px auto 0 auto;
+	}
+	.blog-content p{
+		font-size:80%;
+	}
+	.blog-img-container{
+		width:100%;
+		min-height:0;
+		float:none;
+		margin-right:0;
+		position:none;
+		border-radius:none;
+		padding:5px;
+	}
+	
+	.blog-date-single{
+		width:auto;
+		height:auto;
+		font-size:;
+		font-family: 'Raleway', sans-serif;
+		font-weight:bold;
+		color:#ffffff;
+		font-size:75%;
+
+	}
+	
+	.floral-blog{
+		width:100%;
+		height:auto;
+		background:none;
+		margin:0 auto;
+		padding:0;
+		border-bottom:1px solid #b2b2b2;
+	}
+	/*Blog section set*/
+}
+
+/*Styles for screen 384px and lower*/
+@media only screen and (max-width: 384px){
+	/*Rsvp section set*/
+	.rsvp-button{
+		margin-top:22%;
+
+	}
+	
+	.title-rsvp-form{
+		font-size:120%;
+	}
+	/*Rsvp section set*/
+	
+	/*Blog section set*/
+	
+	.blog-img-container{
+		position:static !important;
+		margin:0 !important;
+		float:none !important;
+
+	}
+	
+	/*Blog section set*/
+}
+
+@media only screen and (max-width:991px){
+
+#main_navigation ul ul {
+	left: -25px;
+}
+
+
+.blog-space{
+	height:80px;
+}
+#rsvp-main{
+	padding-top:60px;
+}
+
+.title-rsvp{
+	font-size:70px;
+}
+
+#slider li{
+	height:500px;
+}
+
+.container-quotes{
+	padding-top:1px;
+}
+
+#quote-animation{
+	margin:20px 60px;
+	font-size:12px;
+}
+.content-logo{
+	padding-top:5px;
+}
+.content-logo p{
+	font-size:10px;
+}
+		
+	
+ul.nav.navbar-nav .nav-menu > li > a{
+	width:80px;
+	line-height:1.5em;
+}		
+
+.content-logo h1{
+	font-size:32px;
+}
+#logowrap{
+	width:200px;
+}
+#couple{
+	width:300px;
+	background-size:contain;
+}
+.contact-title{
+	font-size:32px;
+}
+#contact-main{
+	min-height:200px;
+}
+
+}/* (max-width:991px) */
+
+
+@media only screen and (min-width:768px) and (max-width:991px){
+
+.fixed #main_navigation .nav-menu {
+	line-height: 50px;
+}
+
+#main_navigation .nav-menu {
+	line-height: 75px;
+}
+
+.content-logo{
+	padding:0 15px;
+}
+.fixed .show-fixed {
+	margin-top: 70px;
+	font-size: 22px;
+	margin-bottom: 10px;
+}
+.fixed #logowrap{
+	top:-45px;
+}
+.fixed #menumain{
+	height:50px;
+}
+
+#menumain{
+	height:76px;
+}
+#main_navigation .nav-menu > li {
+	width:80px;
+}
+
+.menu-border{
+	height:7px;
+	background-size:contain;
+}
+
+.element{
+	width:750px;
+}
+
+#countdown li{
+	display:block;
+}
+#countdown .seperator{
+	display:none;
+}
+
+}/* (min-width:768px) and (max-width:991px) */
+
+
+@media only screen and (max-width:767px){
+	
+
+.title-index{
+	background-size:initial;
+}
+
+.blog-page-title{
+	width:100%;
+}
+
+#countdown-main{
+	padding-top:50px;
+}
+
+.fixed #main_navigation {
+	margin-top: 10px;
+}
+
+.menu-border{
+	height:6px;
+}
+#menumain{
+	height:75px;
+}
+
+.element{
+	width:auto;
+	height:auto;
+	margin:30px auto;
+}
+.contactdetail{
+	border-left:none;
+	margin-top:20px;
+}
+
+.contactdetail h4{
+	padding-top:20px;
+	border-top:1px dashed #FFFFFF;
+}
+
+.bride-contact.last{
+	border-bottom:none;
+}
+
+.footer-text{
+	color:rgba(0,0,0,0);
+}
+
+.menu-border {
+	height: 8px;
+	background-size: contain;
+}
+.wedding-date{
+	display:none;
+}
+#logowrap{
+	height:160px;
+	margin-bottom:0;
+	position:absolute;
+	left: 0;
+	/* right: 0; */
+	margin-left: auto;
+	margin-right: auto;
+	z-index:1;
+}
+
+#slider img{
+	max-height:400px;
+	width:auto;
+	overflow:hidden;
+	margin:0 auto;
+}
+#slider li{
+	height:400px;
+}
+.space-countdown,
+#quote{
+	display:none;
+}
+
+#countdown .seperator.middle{
+	display:block;
+	float:none;
+	width:100%;
+	height:0;
+	visibility:hidden;
+}
+
+#contact-main{
+	padding-bottom:150px;
+}
+.contact-title{
+	margin-bottom:0;
+}
+#ceremony-main{
+	padding-bottom:30px;
+}
+.title-rsvp{
+	font-size:45px;
+}
+#rsvp-main{
+	paddint-top:30px;
+}
+#couple{
+	height:200px;
+}
+
+/*header set*/
+	.navbar-default .navbar-nav  {
+    line-height: 50px;
+	text-align:center;
+}
+	.navbar-default .navbar-nav{
+		margin-top:25px;
+	}
+	
+	.content-logo{
+		padding:0;
+		margin:0 auto;
+	}
+
+	#menumain{
+		background:#ffffff;
+	}
+	.fixed #logowrap {
+		top: -50px;
+	}
+	
+	.blog-space{
+		height:0px;
+	}
+	/*header set*/
+	
+	
+	/*Navigation set*/
+
+	#main_navigation ul{
+		display:none;
+	}
+	
+	.fixed .menu-icon {
+		top:0;
+		right:0;
+	}
+	.fixed #menumain{
+		height:50px;
+	}
+	.fixed .menu-border{
+		*height:6px;
+	}
+	
+	/*Navigation set*/
+	
+	
+	/*Quotes section set*/
+	#quote-animation{
+		min-height:100%;
+	}
+	.container-quotes{
+		width:100%;
+		min-height:auto;
+		background:#ffb7b7;
+		margin:0 auto 0 auto;
+	}
+	.content-quotes{
+		font-size:78%;
+		padding:5px;
+	}
+	.content-quotes h4 {
+		text-align:center;
+		font-family: 'Droid Serif', serif;
+	}
+	.creator{
+		text-align:center;
+		margin:10px 0 0 0;
+	}
+	/*Quotes section set*/
+	
+	
+	/*Countdown section set*/
+	
+	.countdown-container-timer{
+		height:auto;
+		padding:0;
+	}
+	.floral-right, .floral-left{
+		display:none;
+	}
+	.floral-center{
+		margin:10px auto;
+	}
+	.title-countdown{
+		margin:10px 0 0 0;
+	}
+	.countdown-content{
+		color:#616161;
+		text-shadow:1px 1px 0px rgba(255,255,255, .3);
+		font-size:100%;
+		text-align:center;
+		font-family: 'Raleway', sans-serif;
+	}
+		/*timer section set*/
+		ul.countdown {
+			list-style: none;
+			margin:0;
+			padding:0;
+			display: block;
+		}
+		
+		ul.countdown li span {
+			font-size: 130% !important;
+			line-height: 83px;
+			font-family: 'Droid Serif', serif;
+			padding:10px;
+			background:#ffb7b7;
+			border-radius:100%;
+			color:#ffffff;
+			margin:0;
+		}
+		
+		ul.countdown li.seperator {
+			font-size: 200% !important;
+			line-height: 73px;
+			vertical-align: top;
+			font-family: 'Droid Serif', serif;
+			color:#ffb7b7;
+			margin:0;
+		}
+		/*timer section set*/
+	
+	/*countdown section set*/
+	
+	
+	/*Rsvp section set*/
+	#gifts-main{
+		margin-top:0 !important;
+	}
+		
+	.title-rsvp{
+		font-size:350%;
+	}
+
+	.rsvp-button{
+		right:30%;
+	}
+	
+	.giftlist{
+		width:70px;
+		height:70px;
+		margin:10px auto;
+
+	}
+	
+	/*Rsvp section set*/
+	
+	
+	/*contact section set*/
+	
+	#contact-main{
+		width:100%;
+		height:auto;
+	}
+	
+	.content {
+		width:100%;
+		border:1px dotted #f4d497;
+		padding:10px;
+		border-radius:8px;
+		position:inline;
+	}
+	
+	.greetings{
+		
+		margin:10px 0 10px 0;
+		
+	}
+	
+	.extra{
+		font-size:12px;
+	}
+	
+	/*contact section set*/
+	
+	
+	/*footer section set*/
+	#footer-main{
+		width:100%;
+		margin:0 auto;
+		height:auto;
+		padding:0;
+
+	}
+	.footer-container{
+		height:70px;
+		background:#febcbc;
+	}
+	
+	/*footer section set*/
+	
+	.fixed .show-fixed {
+		font-size: 24px;
+		margin-top: 70px;
+		margin-bottom: 10px;
+	}
+
+}/* (max-width:768px) */
+
+@media only screen and (max-width:782px){
+	.admin_bar_show.fixed{
+		top: 46px;
+	}
+	.admin-bar #header.fixed {
+		top: 46px;
+	}
+	.giftlist-id {
+		font-size: 13px;
+	}
+	.amazon-gift .col-md-4{
+		width:33%;
+		float:left;
+	}
+	.space-gifts {
+		height: 20px;
+	}
+}
+
+
+@media only screen and (max-width:580px){
+	.amazon-gift .col-md-4{
+		width:50%;
+		float:left;
+	}
+	.menu-menu-1-container{
+		min-height:0;
+	}
+}
+@media only screen and (max-width:400px){
+.blog-container {
+		margin-right:-10px;
+	}
+}
+@media only screen and (max-width:340px){
+	.amazon-gift .col-md-4{
+		width:100%;
+		float:none;
+		margin:0 auto;
+	}
+	.rsvp-button{
+		margin-left:-3px;
+	}
+	.blog-container {
+		margin-right:auto;
+	}
+}
+}
+@media only screen and (max-width:260px){
+	#countdown li {
+		display: inline;
+		margin: 0 auto;
+	}
+	#countdown li.seperator {
+		display:none;
+	}
+	.rsvp-button{
+		margin:0;
+	}
+}
+@media only screen and (max-width:630px){
+
+	.giftlist-id {
+		font-size: 12px;
+	}
+}
+@media only screen and (max-width:600px){
+	.admin-bar #header.fixed{
+		top:0;
+	}
+	
+	body.admin-bar .slide-in.fixed,
+	body.admin-bar .slide-in.fixed .sub-menu{
+		top: 0;
+	}
+}

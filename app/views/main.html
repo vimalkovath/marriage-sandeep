@@ -1,0 +1,294 @@
+<div id="wrapper">
+    <!-- wrapper start -->
+    <!-- Header -->
+	<div id="home_section">
+			</div>
+    <div class="header">
+
+        <div class="navbar  navbar-default navbar-fixed-top" role="navigation">
+
+        
+
+            <div class="navbar-header">
+
+                <button
+                    class="navbar-toggle collapsed"
+                    data-target="#js-navbar-collapse"
+                    data-toggle="collapse"
+                    type="button">
+                    <div class="menu-icon">
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                    </div>
+
+                </button>
+
+                <a class="navbar-brand" href="#/">
+				    <div id="logowrap">
+                <!-- Logo -->
+                <div class="content-logo">
+                
+                </div>
+            </div>
+            <!-- Logo -->
+				
+				
+				</a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="js-navbar-collapse">
+
+                <ul class="nav navbar-nav">
+
+                    <!--    <li><a ng-href="#/about">About</a></li> -->
+
+                    <li class="current">
+                        <a ng-click="gotoElement('slidewrap')">Home</a>
+                    </li>
+                    <li class="menu-item-has-children">
+                        <a ng-click="gotoElement('our_story')">Our Story</a>
+                    </li>
+                    <li class="menu-item-has-children">
+                        <a ng-click="gotoElement('countdown_section')">The Wedding</a>
+                    </li>
+                    <li>
+                        <a ng-click="gotoElement('gallery')">Gallery</a>
+                    </li>
+                    <li>
+                        <a ng-click="gotoElement('rsvp_section')">RSVP</a>
+                    </li>
+                    <li>
+
+                        <a ng-click="gotoElement('contact_section')">Contact</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Header -->
+    <div id="slidewrap">
+	
+	<!-- rn-carousel-auto-slide -->
+  <ul rn-carousel rn-carousel-auto-slide rn-carousel-transition="hexagon" class="rslides rslides1" id="slider">
+  <li>
+                <img alt="slide1" src="./css-js-img/slide1-1700x900.jpg">
+            </li>
+            <li >
+                <img alt="slide3" src="./css-js-img/slide3-1700x900.jpg">
+            </li>
+            <li>
+                <img alt="slide2" src="./css-js-img/slide2-1700x900.jpg">
+            </li>
+</ul>
+      
+
+    </div>
+ 
+ <div class="clearfix"></div>
+ 
+    <div class="section" id="our_story">
+        <div id="story_main">
+
+            <div class="container">
+                <h2>
+                    Our Story</h2>
+
+               
+				
+							<div class="col-md-2 col-xs-2 col-sm-2" >
+                               <img src="./css-js-img/1.png" width="100%">
+                            </div>
+							<div class="col-md-8 col-sm-8 col-xs-8" >
+                                <p>
+				
+				Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                    when an unknown printer took a galley of type and scrambled it to make a type
+                    specimen book. .Lorem Ipsum is simply dummy text of the printing and typesetting
+                    industry. Lorem Ipsum has been the industry's standard dummy text ever since the
+                    1500s, when an unknown printer took a galley of type and scrambled it to make a
+                    type specimen book. .Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's standard dummy text
+                    ever since the 1500s, when an unknown printer took a galley of type and
+                    scrambled it to make a type specimen book.
+                </p>
+                            </div>
+							<div class="col-md-2 col-xs-2 col-sm-2" >
+							<img src="./css-js-img/2.png" width="100%">
+                               
+                            </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="section" id="countdown_section">
+        <div id="countdown-main">
+            <!-- countdown main -->
+            <div class="container">
+                <div class="space-countdown"></div>
+                <!-- spacer -->
+                <h2>The Wedding</h2>
+                <div class="row">
+                    <!-- row start-->
+
+                    <div class="countdown-container-timer col-md-6 col-sm-4">
+                        <div class="row">
+                            <div class="col-md-4 hidden-sm">
+                                <div class="floral-left">&nbsp;</div>
+                            </div>
+                            <!-- <div class="col-md-4 col-sm-12"><h3 class="title-countdown">It's Just Now</h3></div> -->
+                            <div class="col-md-4 hidden-sm">
+                                <div class="floral-right">&nbsp;</div>
+                            </div>
+                        </div>
+                        <ul id="countdown">
+						<countdown stopdate="1/10/2016 11:00 AM"></countdown>
+                           
+                        </ul>
+                        <!-- <h4 class="title-countdown">Until We Get Married</h4> -->
+                        <div class="floral-center">&nbsp;</div>
+                    </div>
+
+                    <div class="clearfix"></div>
+                </div>
+
+             
+                <div class="countdown-container col-md-12 col-sm-12">
+                  
+
+				  <div class="social-media-wrap">
+                        <a href="" target="_blank"><img alt="" src="./css-js-img/countdown-fb-icon.png"></a>
+                        <a href="" target="_blank"><img alt="" src="./css-js-img/countdown-twitter-icon.png"></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="section" id="gallery">
+
+        <div id="gallery-main">
+            <!-- rsvp main -->
+            <div class="container">
+			<h2> Gallery </h2>
+			
+				<ng-gallery images="main.images" thumbs-num="11">
+</ng-gallery>
+			</div>
+            <!-- rsvp container -->
+        </div>
+    </div>
+    <!-- rsvp main -->
+
+    <div class="section" id="rsvp_section">
+
+        <div id="rsvp-main">
+            <!-- rsvp main -->
+            <div class="container">
+                <div class="rsvp-container col-md-12">
+                    <!-- rsvp container -->
+					
+                    <h1 class="title-rsvp">
+                        Invitation
+                    </h1>
+                    <div class="rsvp-design-elements">&nbsp;</div>
+                    <div class="rspv-form-wrapper">
+					<img src="./css-js-img/card.png">
+                            <!-- form title -->
+                           <!--  <h4 class="title-rsvp-form">
+                                MY official invitation
+                            </h4> -->
+                        <!--     <div class="centered">
+                                <p>
+
+                                    <img alt="" class="img-responsive" src="./css-js-img/floral-center-rsvp.png"></p>
+                            </div> -->
+
+                            <!-- form title -->
+                           <!--  <form id="rsvp_form" method="post">
+                                <div class="rsvp-name">
+                                    <div class="rsvp-formwrap">
+
+                                        <div class="input-border"></div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </form> -->
+                    
+                </div>
+            </div>
+            <!-- rsvp container -->
+        </div>
+    </div>
+    <!-- rsvp main -->
+<div class="section" id="contact_section">
+    <div id="contact-main">
+        <!-- main -->
+        <div class="container">
+		    <h2 class="centered head">wish us</h2>
+            <div class="row">
+                <!-- Start Row -->
+
+                <div class="contactform col-md-offset-2 col-sm-8">
+                    <!-- col start -->
+                    <h4 class="contactform-title">Send Your Greetings</h4>
+                    <form id="contactForm" method="post">
+                        <div class="row">
+                            <div class="contact-name col-sm-12 col-md-6">
+                                <label class="contact-label">Name</label>
+                                <input id="contactName" name="contactName" required="" type="text" value="">
+                            </div>
+                            <div class="contact-email col-sm-12 col-md-6">
+                                <label class="contact-label">Email</label>
+                                <input id="email" name="email" required="" type="text" value="">
+                            </div>
+                        </div>
+                        <div class="contact-text">
+                            <label class="contact-label">Message</label>
+                            <textarea class="required requiredField" id="commentsText" name="comments"></textarea>
+                        </div>
+                        <input class="btn greetings" id="submitted" type="submit" value="Send">
+                    </form>
+                </div>
+
+                <div class="col-md-4 col-md-offset-4 col-sm-4 col-sm-offset-4">
+                    <!-- Button that triggers the popup -->
+                    <h4 class="contact-title">
+
+                        <!-- Button that triggers the popup -->
+                        <!-- error message outside -->
+
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <!-- End Row -->
+            </div>
+        </div>
+        <!-- main -->
+    </div>
+    
+    <!-- /#footer-main -->
+    <div class="mobile-footer hidden-lg">
+        <div class="footer-text">
+            © 2014 desiged by catfxfilms Ph: +91-9020380704
+            <br/>
+            Email id : mailus@catfxfilms.com
+        </div>
+    </div>
+    <!-- Back to top button -->
+    <div class="back-to-top">
+        <a href="#">
+            <img alt="Back to Top" src="./css-js-img/arrow-top.png" title="Back to Top">
+        </a>
+    </div>
+</div>
+</div>
+
+<!-- wrapper end -->

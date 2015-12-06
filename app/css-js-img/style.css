@@ -1,0 +1,1589 @@
+/*
+Theme Name: Enlance
+Theme URI: http://demo.puriwp.com/enlance
+Author: Minimal Themes
+Author URI: http://themeforest.net/user/minimalthemes
+Description: Responsive One-Page Wedding WordPress Theme
+Version: 1.0
+License:
+License URI:
+Text Domain: enlance
+Tags: wedding, one page, responsive, white, clean, theme options,
+
+*/
+
+/*------------------------------------------------------------------
+[Table of contents]
+
+1. Wordpress Core
+2. Main layout
+3. Header
+4. Main Menu
+	- Fixed Sroll Menu
+5. Main Slider
+	- wedding date
+	- Quote Ticker
+6. main content
+	- Countdown Section
+	- Ceremony Section
+	- Rsvp Section
+	- Gifts Section
+	- Blog Section
+		- pagination Section
+		- Comment Section
+	- Gallery Section
+	- contact Section
+7. footer
+8. Extras
+-------------------------------------------------------------------*/
+
+/* 1. WordPress Core
+-------------------------------------------------------------- */
+.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+.aligncenter{
+    display: block;
+    margin: 5px auto 5px auto;
+}
+
+.alignright {
+    float:right;
+    margin: 5px 0 20px 20px;
+}
+
+.alignleft {
+    float: left;
+    margin: 5px 20px 20px 0;
+}
+
+a img.alignright {
+    float: right;
+    margin: 5px 0 20px 20px;
+}
+
+a img.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+a img.alignleft {
+    float: left;
+    margin: 5px 20px 20px 0;
+}
+
+a img.aligncenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.wp-caption {
+    background: #fff;
+    border: 1px solid #f0f0f0;
+    max-width: 96%; /* Image does not overflow the content area */
+    padding: 5px 3px 10px;
+    text-align: center;
+    clear:both;
+}
+
+.wp-caption.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignleft {
+    margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignright {
+    margin: 5px 0 20px 20px;
+}
+
+.wp-caption img {
+    border: 0 none;
+    height: auto;
+    margin: 0;
+    max-width: 98.5%;
+    padding: 0;
+    width: auto;
+    margin-bottom:10px;
+}
+
+.wp-caption p.wp-caption-text {
+    font-size: 12px;
+    line-height: 17px;
+    margin: 0;
+    padding: 0 4px 5px;
+}
+
+.sticky{}
+.bypostauthor{}
+
+a:hover, a:visited, a:link, a:focus{
+	text-decoration:none;
+}
+/*-------------------------------------------------------------- */
+/* 2. Main layout
+----------------------------------------------- */
+.back-to-top{
+	position:fixed;
+	bottom:50px;
+	right:50px;
+	z-index:999;
+}
+
+.enlance-pagination{
+	text-align:center;
+}
+.enlance-pagination .page-numbers{
+	display:inline-block;
+	font-size:20px;
+	width:50px;
+	height:50px;
+	line-height:50px;
+	font-family: 'Droid Serif', serif;
+	background: #ffb7b7;
+	border-radius: 100%;
+	-moz-border-radius: 100%;
+	-webkit-border-radius: 100%;
+	-o-border-radius: 100%;
+	color: #ffffff;
+}
+.enlance-pagination .page-numbers.current{
+	color:#80364d;
+}
+
+#blog_template_container{
+	padding:50px 0;
+}
+
+#blog_section{
+	margin-top:50px;
+}
+
+#wrapper{
+	width:100%;
+	margin:0;
+	padding:0;
+	overflow-x:hidden;
+}
+
+#main-container{
+	margin:0 auto;
+	width:100%;
+	height:auto;
+	padding:0;
+}
+
+/*-------------------------------------------------------------- */
+/* 3. Header
+----------------------------------------------- */
+
+
+.header{
+	width:100%;
+	height:0px;
+	margin:0;
+	padding:0;
+	top:25px;
+	position:relative;
+	z-index:4;
+}
+
+#logowrap{
+	margin:0 auto;
+	position:absolute;
+	height:265px;
+	width:327px;
+	top:0;
+	left:0;
+	/* right:0; */
+	background:url(container-logo.png) top center no-repeat;
+	background-size:contain;
+	z-index:5;
+}
+
+.content-logo{
+	padding: 20px 30px;
+	text-align: center;
+	margin: 0 auto;
+}
+
+.content-logo h1{
+	color:#80364d;
+	font-weight:bold;
+	font-family: 'Niconne', cursive;
+	margin:0;
+	padding:0;
+	text-align:center;
+	font-size:50px;
+}
+.content-logo a{
+	text-decoration:none;
+	color:#F2E78F;
+}
+.content-logo a:hover{
+	text-decoration:none;
+	color:#80364d;
+}
+.content-logo p{
+	font-size:13px;
+	font-family: georgia, serif;
+	text-align:center;
+	font-weight:bold;
+    color: #F2E78F;
+	}
+/*-------------------------------------------------------------- */
+/* 4. Main Menu
+----------------------------------------------- */
+
+
+.menu-border{
+	/* background: url(border-header.png) repeat-x center top; */
+	/* height:15px; */
+	position:absolute;
+	width:100%;
+}
+/*----------------------------------*/
+/* 4. - Fixed Scroll Navigation Menu */
+/*----------------------------------*/
+
+.navbar-default .navbar-nav   > li > a {
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    color: #F2E78F;
+    padding: 6px 15px;
+    display: inline-block;
+}
+.navbar-default .navbar-nav  > li.current > a {
+    color: #C12126;
+    background: #F2E78F;
+}
+.navbar-default .navbar-nav  a {
+    color: #fff;
+    display: inline-block;
+    width: auto;
+    text-align: center;
+    text-decoration: none;
+    line-height: 1.5em;
+    color: #80364c;
+    padding: 10px 0;
+    vertical-align: middle;
+}
+.navbar.navbar-default.navbar-fixed-top {
+    background-color: #BB1D22;
+    border-top: 2px solid #F2E78F;
+	    border-bottom: 2px solid #F2E78F;
+}
+/*----------------------------------*/
+/* 5. Main Slider */
+/*----------------------------------*/
+
+#slidewrap{
+	width:100%;
+	padding:0;
+	padding-top:0;
+	position:relative;
+	
+	box-shadow:5px 0 5px #333333;
+}
+
+#slider li{
+	height:900px;
+	list-style:none;
+}
+/*----------------------------------*/
+/* 5. - Wedding Date */
+/*----------------------------------*/
+.wedding-date{
+	position:absolute;
+	bottom:190px;
+	z-index:3;
+	width:500px;
+	height:300px;
+	background:url( 'slide-date.png' ) no-repeat center center;
+	background-size:contain;
+	text-align:center;
+}
+
+.wedding-date h2{
+	position:relative;
+	font-family: 'Parisienne', cursive;
+	font-size:50px;
+	top:31%;
+	color:#80364c;
+}
+
+/*----------------------------------*/
+/* 5. - Quote Ticker */
+/*----------------------------------*/
+#quote{
+	margin:0 auto;
+	padding:0;
+	height:0;
+}
+#quote-animation{
+	margin-top:40px;
+	text-align:center;
+}
+
+#quote-animation ul{
+	list-style:none;
+}
+
+.creator{
+	text-align:center;
+}
+/*----------------------------------*/
+/* 6. main content */
+/*----------------------------------*/
+#main-page{
+	margin:0;
+	padding:0;
+	width:100%;
+}
+.main-content{
+	*width:100%;
+	height:auto;
+	background:#ffffff;
+}
+.split{
+	background:#ffffff;
+	padding:10px;
+	margin:0;
+}
+
+.main-content h2.entry-title{
+	color:#514f52;
+	font-weight:bold;
+	font-family: 'Parisienne', cursive;
+	text-align:left;
+	margin-bottom:0;
+	margin-top:100px;
+}
+
+.posted_on{
+	margin-bottom:30px;
+}
+
+.blog-title-line{
+	width: 200px;
+	border-top: 1px solid #80364c;
+	display: inline-block;
+	margin:10px 0;
+}
+.centered p{
+	text-align:center;
+	margin:0 auto;
+}
+
+.main-content h1,
+.main-content h2,
+.main-content h3,
+.main-content h4,
+.main-content h5,
+.main-content h6{
+	margin-top:30px;
+	color:#514f52;
+	font-weight:bold;
+	font-family: 'Parisienne', cursive;
+	text-align:left;
+}
+
+.main-content > article{
+	padding-bottom:50px;
+}
+
+.main-content a{
+	color:#514f52;
+	text-decoration:none;
+}
+
+.main-content a:hover{
+	text-decoration:none;
+	color:#80364d;
+}
+
+ #our_story {
+            padding: 30px;
+            min-height: 625px;
+			    height: 100%;
+    /* height: 428px; */
+    background: url(banner1.png);
+    background-size: cover;
+    /* margin-bottom: -10px; */
+        }
+        #our_story h2 {
+            text-align: center;
+            display: block;
+            padding: 40px;
+			    font-family: 'Parisienne', cursive;
+    font-weight: bold;
+    font-size: 300%;
+        }
+        #our_story p {
+            line-height: 35px;
+            font-size: 16px;
+			    text-align: justify;
+        }
+        #countdown-main h2 {
+			    font-family: 'Parisienne', cursive;
+    font-weight: bold;
+    font-size: 300%;
+            text-align: center;
+            display: block;
+            padding: 10px;
+        }
+        .centered {
+            text-align: center;
+        }
+
+
+/*-------------------------------------------------------------- */
+/* 6. - Countdown Section
+----------------------------------------------- */
+#countdown{}
+#countdown {
+	list-style: none;
+	padding: 0;
+	display: block;
+	text-align: center;
+	text-transform:capitalize;
+}
+#countdown li {
+	display: inline-block;
+	margin:0 15px;
+}
+
+div#days{
+	font-size: 25px;
+	line-height: 100px;
+	font-family: 'Droid Serif', serif;
+	width:100px;
+	background:#fbabab;
+	border-radius:100%;
+	-moz-border-radius:100%;
+	-webkit-border-radius:100%;
+	-o-border-radius:100%;
+	color:#ffffff;
+	float:left;
+	margin-left:10px;
+}
+
+
+div#hours{
+	font-size: 25px;
+	line-height: 100px;
+	font-family: 'Droid Serif', serif;
+	width:100px;
+	background:#fbabab;
+	border-radius:100%;
+	-moz-border-radius:100%;
+	-webkit-border-radius:100%;
+	-o-border-radius:100%;
+	color:#ffffff;
+	float:left;
+	margin-left:10px;
+}
+
+div#minutes{
+	font-size: 25px;
+	line-height: 100px;
+	font-family: 'Droid Serif', serif;
+	width:100px;
+	background:#fbabab;
+	border-radius:100%;
+	-moz-border-radius:100%;
+	-webkit-border-radius:100%;
+	-o-border-radius:100%;
+	color:#ffffff;
+	float:left;
+	margin-left:10px;
+}
+div#seconds{
+	font-size: 25px;
+	line-height: 100px;
+	font-family: 'Droid Serif', serif;
+	width:100px;
+	background:#fbabab;
+	border-radius:100%;
+	-moz-border-radius:100%;
+	-webkit-border-radius:100%;
+	-o-border-radius:100%;
+	color:#ffffff;
+	float:left;
+	margin-left:10px;
+}
+
+#countdown li span {
+	font-size: 220%;
+	line-height: 83px;
+	font-family: 'Droid Serif', serif;
+	padding:15px;
+	background:#fbabab;
+	border-radius:100%;
+	-moz-border-radius:100%;
+	-webkit-border-radius:100%;
+	-o-border-radius:100%;
+	color:#ffffff;
+}
+#countdown li.seperator {
+	font-size: 220%;
+	line-height: 73px;
+	vertical-align: top;
+	font-family: 'Droid Serif', serif;
+	color:#fbabab;
+}
+#countdown li p {
+	color: #414141;
+	font-size: 14px;
+	font-family: 'Roboto Slab', serif;
+}
+
+#countdown-main{
+    width: 100%;
+    height: auto;
+    background: url(countdown-bg.jpg);
+    background-size: cover;
+    /* background-color: transparent; */
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */}
+.space-countdown{
+	height:85px;
+}
+.countdown-container{
+	height:auto;
+	padding:10px;
+	position:relative;
+}
+
+.countdown-container-timer{
+	height:auto;
+	padding:10px;
+	margin-top:20px;
+}
+
+.countdown-container-timer h4{
+	font-family: 'Droid Serif', serif;
+	color:#414141;
+	margin:15px 0;
+}
+
+.title-name{
+	text-align:center;
+	color:#80364c;
+	font-weight:bold;
+	font-family: 'Niconne', cursive;
+}
+.title-countdown{
+	text-align:center;
+	color:#414141;
+	font-weight:bold;
+	margin:0;
+	padding:0;
+	font-family: 'Droid Serif', serif;
+}
+.floral-right{
+	height:34px;
+	/* background: url(floral-right.png) no-repeat left center; */
+}
+.floral-left{
+	height:34px;
+	/* background: url(floral-left.png) no-repeat right center; */
+}
+.floral-left,
+.floral-right{
+	width:100%;
+	background-size:contain;
+}
+.floral-center{
+	height:33px;
+	width:179px;
+	/* background: url(floral-center.png) no-repeat; */
+	margin:15px auto 0 auto;
+}
+.countdown-content{
+	color:#414141;
+	font-size:100%;
+	text-align:center;
+	font-family: 'Raleway', sans-serif;
+}
+.social-media-wrap{
+	max-width:67px;
+	height:auto;
+	margin:10px auto;
+}
+/*-------------------------------------------------------------- */
+/* 6. - Ceremony Section
+----------------------------------------------- */
+#ceremony{}
+#ceremony-main{
+	width:100%;
+	height:auto;
+	min-height:635px;
+	background: #f4d497;
+	margin-top:;
+}
+.dashed{
+	border-bottom:1px dashed #ffffff;
+	padding:5px 0 0 0;
+}
+
+.ceremony-container{
+	height:auto;
+	padding:10px;
+}
+
+.title-ceremony{
+	text-align:center;
+	color:#515151;
+	font-weight:bold;
+	font-family: 'Roboto Slab', serif;
+}
+.ceremony-design-elements{
+	height:39px;
+	width:54px;
+	background: url(ceremony-design-element.png) no-repeat;
+	margin:20px auto 20px auto;
+}
+.ceremony-content{
+	color:#515151;
+	font-size:100%;
+	text-align:center;
+	font-family: 'Raleway', sans-serif;
+	margin:10px 0;
+}
+.title-place{
+	text-align:center;
+	color:#515151;
+	font-size:14px;
+	text-transform:uppercase;
+	font-family: 'Raleway', sans-serif;
+	font-weight:bold;
+}
+.time-ceremony-container{
+	width:128px;
+	height:46px;
+	background:#fff1b7;
+	margin:20px auto 0 auto;
+	padding:5px;
+	border-radius:5px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+}
+.time-ceremony-content{
+	border:3px dotted #515151;
+	width:100%;
+	height:100%;
+	font-size:18px;
+	text-transform:uppercase;
+	font-family: 'Raleway', sans-serif;
+	font-weight:bold;
+	text-align:center;
+	padding:3px;
+	color:#515151;
+}
+.image-ceremony{
+	width:100%;
+	height:auto;
+	margin:18px auto 18px auto;
+}
+.image-ceremony img{
+	border-radius:100%;
+	margin:0 auto;
+}
+.ceremony-container-center{
+	position:relative;
+	height:619px;
+}
+.image-ceremony-center{
+	position:absolute;
+	bottom:0;
+	left:0;
+	right:0;
+	margin-left:auto;
+	margin-right:auto;
+	text-align:center;
+}
+/*-------------------------------------------------------------- */
+/* 6. - Gallery Section
+----------------------------------------------- */
+
+#gallery-main {
+    width: 100%;
+    height: auto;
+    min-height: 400px;
+	
+    margin-top: -10px;
+    padding-top: 60px;
+	background-color:white;
+
+	
+	
+}
+#gallery-main  ng-gallery{max-height:400px;
+	display:block;
+	overflow:hidden;
+}
+#gallery-main h2{text-align:center;    font-family: 'Parisienne', cursive;
+    font-weight: bold;
+    font-size: 300%;}
+
+#gallery-main img.ng-thumb {
+    height: 200px;
+    float: left;
+    display: block;
+    cursor: pointer;
+    margin: 2px 2px 0 0;
+}
+/*-------------------------------------------------------------- */
+/* 6. - Rsvp Section
+----------------------------------------------- */
+#rsvp-main{
+	width:100%;
+	height:800px;
+	min-height:700px;
+	/* background: url(rsvp-bg.jpg) no-repeat; */
+	margin-top:10px;
+	background-size: cover;
+	background-color: #ffe5e5;
+	padding-top:60px;
+}
+.rsvp-container{
+	height:auto;
+	padding:10px;
+}
+.title-rsvp{
+	text-align:center;
+	color:#000;
+	font-weight:normal;
+	font-family: 'Parisienne', cursive;
+	font-size:50px;
+}
+.rsvp-design-elements{
+	height:85px;
+	width:118px;
+	background: url(rsvp-design-element.png) no-repeat;
+	margin:0 auto 0 auto;
+}
+.rspv-form-wrapper{
+	/* padding:10px; */
+	height:660px;
+	max-width:500px;
+	
+	margin: 0 auto 0 auto;
+	/* background: url('card.png') no-repeat;
+	background-size:100%; */
+	/* background: url('rose1.png') no-repeat top right, url('rose2.png') no-repeat bottom left,#fff; */
+	/* background-size:15%; */
+	background-origin:border-box;
+	
+}
+.rsvp-container{
+	background: url('face.png') no-repeat;
+	background-size:100%;
+}
+/* .rspv-form-container{
+	border:1px solid #FFB7B7;
+	width:100%;
+	height:100%;
+	padding:10px;
+} */
+.title-rsvp-form{
+	text-align:center;
+	color:#000;
+	font-weight:bold;
+	font-family: 'Roboto Slab', serif;
+	font-size:26px;
+}
+
+.rsvp-name{
+	margin:50px 10px 0;
+	font-size:100%;
+	padding:5px 0;
+}
+
+.rsvp-event{
+	margin:20px 10px 50px;
+}
+
+.input-border{
+	border:1px solid #ffb7b7;
+	border-top:none;
+	padding-top:5px;
+}
+
+.rsvp-guest{
+	text-align:center;
+	margin-top:16px;
+}
+
+.rsvp-guestform{
+	width:63px;
+	height:63px;
+	background:#ffb8b9;
+	border-radius:100%;
+	padding:10px;
+	margin:0 auto;
+}
+
+.guestform{
+	width:34px;
+	height:44px;
+	margin:0 auto;
+	background: url("down-arrow-2.png") no-repeat bottom center;
+	font-size:24px !important;
+}
+
+.rsvp-eventform{
+	width:100%;
+	margin-top:3px;
+}
+.eventform{
+	background: #80364c url("down-arrow.png") no-repeat 95% center;
+	height:30px;
+	letter-spacing:1px;
+}
+.lable{
+	color:#ffb7b7;
+	font-family: 'Droid Serif', serif;
+	width:25%;
+	float:left;
+	margin:8px 0 0 10px;
+}
+.lable-guest{
+	color:#ffb7b7;
+	font-family: 'Droid Serif', serif;
+	margin:0 0 8px 0;
+	text-align:center;
+	width:100%;
+}
+
+.rsvp-formwrap input {
+	width:100%;
+  	padding: 0 10px;
+  	border-radius:0;
+  	font-family: 'Droid Serif', serif;
+  	color:#ffb7b7;
+  	font-weight:bold;
+  	background:none;
+  	border:none;
+  	letter-spacing:2px;
+  
+}
+
+:focus {outline:none;}
+::-moz-focus-inner {border:0;}
+
+.rsvp-formwrap input:avtive,
+.rsvp-formwrap input::-moz-focus-inner,
+.rsvp-formwrap  input:focus{
+	outline:none;
+	border:none;
+}
+
+/*select box style*/
+
+.sbHolder{
+	font-family: 'Droid Serif', serif;
+	font-weight:bold;
+	height:100%;
+	position: relative;
+	width:100%;
+	height:25px;
+	background:none;
+}
+.sbHolder select:focus{
+	outline:none !important;
+}
+.sbHolder:focus .sbSelector{
+}
+.sbSelector{
+	display: block;
+	height: 44px;
+	left: 0;
+	line-height: 30px;
+	outline: none;
+	overflow: hidden;
+	position: absolute;
+	text-indent: 10px;
+	top: 0;
+	width: 100%;
+	
+}
+
+.guestform a:link,.guestform a:visited{
+	color:#7f374d;
+	text-align:left;
+	outline: none;
+	text-decoration: none;
+}
+
+.eventform a:link,.eventform a:visited{
+	color:#ffb7b7;
+	text-align:left;
+	outline: none;
+	text-decoration: none;
+	height:31px;
+}
+
+.guestform .sbOptions a:link{
+	
+	font-size:14px;
+}
+
+.sbOptions{
+	background-color: #652539;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	top: 30px;
+	width: 100%;
+	z-index: 1;
+	overflow-y: auto;
+	font-family: 'Droid Serif', serif;
+	font-weight:bold;
+}
+.sbOptions li{
+	padding: 5px 7px;
+	
+}
+.sbOptions a{
+	padding-right: 2px;
+}
+.sbOptions a:link, .sbOptions a:visited{
+	color: #ffb7b7;
+	text-decoration: none;
+}
+.rsvp-eventform .sbOptions a:hover,
+.rsvp-eventform .sbOptions a:focus,
+.rsvp-eventform .sbOptions a.sbFocus{
+	color: #FFFFFF;
+}
+.sbOptions li.last a{
+	border-bottom: none;
+}
+
+/*select box style*/
+
+.rsvp-button{
+	width:220px;
+	height:59px;
+	background: url(btn-bg.png)no-repeat;
+	border:0;
+	font-size:16px;
+	font-family: 'Roboto Slab',  serif;
+	font-weight:bold;
+	color:#80364c;
+	display:block;
+	margin:0 auto;
+}
+
+
+/*-------------------------------------------------------------- */
+/* 6. - Gallery Section	*/
+/*-------------------------------------------------------------- */
+#gallery{
+	background:#FFE6E6;
+}
+.gallery{
+	margin-top:-5px;
+}
+.gallery .gallery-border-top{
+	margin-top:0;
+}
+.gallery-border-top{
+	margin-top:50px;
+	background: url(gifts-border-top.png)repeat-x;
+	height: 9px;
+	position: relative;
+	z-index: 2;
+}
+
+.gallery-border-top-template{
+	margin-top:200px;
+	background: url(gifts-border-top.png)repeat-x;
+	height: 9px;
+	position: relative;
+	z-index: 2;
+}
+
+#gallery-main{
+	width:100%;
+	height:auto;
+	display:block;
+}
+#gallery-block{
+	position:relative;
+	width:100%;
+	margin:0;
+	padding:0;
+}
+.gallery-space{
+	text-align:center;
+	padding:10px 0 25px;
+	color:#80364c;
+	background:#FFE6E6;
+}
+
+h2.gallery-title{
+	font-family: 'Droid Serif', georgia, serif;
+	font-size:32px;
+	margin-bottom:30px;
+	margin-top:20px;
+}
+
+.gallery-description{
+	font-family: Raleway, sans-serif;
+	color:#404040;
+	font-size:14px;
+	padding:20px 0px;
+}
+
+.grid{
+	width:auto;
+	height:100;
+	background:#fff;
+	font-size:12px;
+	float:left;
+	-webkit-transition: top 1s ease, left 1s ease;
+	-moz-transition: top 1s ease, left 1s ease;
+	-o-transition: top 1s ease, left 1s ease;
+	-ms-transition: top 1s ease, left 1s ease;
+}
+
+.grid strong {
+	border-bottom:1px solid #ccc;
+	margin:10px 0;
+	display:block;
+	padding:0 0 5px;
+	font-size:17px;
+}
+.grid .meta{
+	text-align:right;
+	color:#777;
+	font-style:italic;
+}
+.grid .imgholder img{
+	max-width:100%;
+	background:#ccc;
+	display:block;
+}
+
+.images-wrapper{
+	position:relative;
+}
+.gallery-caption{
+	position:absolute;
+	bottom:-100%;
+	background:rgba(0, 0, 0, .6);
+	color:#FFFFFF;
+	width:100%;
+	
+	transition:all .2s ease;
+	-webkit-transition:all .2s ease;
+	-moz-transition:all .2s ease;
+}
+.gallery-caption h3{
+	text-align:center;
+	font-size:18px;
+	margin:15px 0;
+}
+.images-wrapper:hover .gallery-caption{
+	bottom:0;
+}
+.collage{
+	margin-right:-5px;
+}
+
+.collage a{
+	position:relative;
+}
+.collage a:before{
+	position:absolute;
+	background:rgba(0,0,0,0);
+	top:0;
+	right:0;
+	bottom:0;
+	left:0;
+	content:'';
+	display:block;
+	
+	transition:all .3s ease;
+	-webkit-transition:all .3s ease;
+	-moz-transition:all .3s ease;
+}
+
+.collage a:hover:before{
+	background:rgba(0,0,0,0.5);
+}
+
+.collage a .zoom-box{
+	position:absolute;
+	left:0;
+	right:0;
+	top:49%;
+	text-align:center;
+}
+
+.collage a span{
+	background:rgba(238,238,238,0);
+	padding:10px;
+	border-radius:100%;
+	-webkit-border-radius:100%;
+	-moz-border-radius:100%;
+	color:rgba(153,153,153,0);
+	font-size:18px;
+	
+	transition:all .3s ease;
+	-webkit-transition:all .3s ease;
+	-moz-transition:all .3s ease;
+}
+
+.collage a:hover span{
+	background:rgba(238,238,238,1);
+	color:rgba(153,153,153,1);
+}
+
+/*-------------------------------------------------------------- */
+/* 6. - contact Section
+----------------------------------------------- */
+#contact{}
+#contact-main{
+    height: 100%;
+    /* height: 428px; */
+    background: url(footer.jpg);
+    background-size: cover;
+    /* margin-bottom: -10px; */
+    padding-top: 5px;
+}
+/* #contact_section{width:100%;
+	height:auto;
+ background:#ffe6e6 url(decorative-line.png) no-repeat top center;
+
+	background-size: cover;
+	background-color: transparent;
+	background-repeat: no-repeat;
+	background-attachment: fixed
+}
+ */
+ .space-gallery{
+	height:133px;
+}
+.head {
+	color: #ffffff;        font-family: 'Parisienne', cursive;
+    font-weight: bold;
+    font-size: 300%;
+    font-weight: bold;
+    font-size: 300%;
+}
+
+.contact-title{
+	text-align:center;
+	font-family: 'Parisienne', cursive;
+	font-size:56px;
+	text-decoration:none;
+	text-transform:uppercase;
+	color:#80364d;
+}
+#contact-button{
+	text-transform:uppercase;
+	background:none;
+	border:none;
+}
+
+.element { 
+	display:none;
+	background:#80364d;
+	border-radius:8px;
+	margin:0 auto;
+	width:865px;
+	height:480px;
+	border: 2px dotted #f4d497;
+	box-shadow:0px 0px 0px 10px #80364d;
+
+}
+
+
+.content {
+	width:100%;
+	padding:20px;
+	border-radius:8px;
+	position:inline;
+}
+
+.contactform-title{
+	font-size:22px;
+	color:#fff;
+	font-family: 'Parisienne', cursive;
+	margin:0 0 15px 0;
+}
+
+.contact-name, .contact-email{
+	margin:0 0 10px 0;
+}
+.contact-text{
+	width:100%;
+}
+
+.contact-label{
+	font-family: 'Droid Serif', georgia, serif;
+	font-size:16px;
+	color:#fff;
+}
+
+.contact-name input,
+.contact-email input,
+.contact-text textarea{
+	outline:none;
+	background: rgba(16, 15, 15, 0.41);
+	margin:0;
+	padding:10px;
+	border:0;
+	height:30px;
+	border-radius:5px;
+	width:100%;
+	height:40px;
+	color:#fff;
+	font-size:16px;
+	font-family: 'Droid Serif', georgia, serif;
+}
+
+
+.contact-text textarea{
+	min-height:170px;
+}
+
+.greetings{
+	border:0;
+	padding:9px 41px;
+	margin:10px 0 0 0;
+	background:#BB1D22;
+	font-family: 'Droid Serif', georgia, serif;
+	color:#fff;
+	font-size:16px !important;
+}
+.greetings:hover{
+	color:#80364d;
+}
+
+
+.contactdetail{
+	height:100%;
+	margin:0;
+	padding:0;
+	border-left:1px dashed #ffffff;
+}
+.contactdetail h4{
+	font-family: 'Parisienne', cursive;
+	color:#fff;
+	margin:5px 20px;
+	padding:0;
+}
+
+
+.bride-contact{
+	border-bottom:1px dashed #ffffff;
+	font-family: 'Droid Serif', georgia, serif;
+	color:#fff;
+	font-size:100%;
+	margin:20px;
+	padding-bottom:15px;
+}
+
+.contact_social_icons{
+	padding-left:10px;
+}
+
+.text{
+	width:100%;
+	height:auto;
+	padding:5px 0;
+}
+.address-icon{
+	background: url(contact-icon-place.png) top left no-repeat;
+	width:10%;
+	height:14px;
+	float:left;
+	margin:4px 0 0 0;
+}
+.phone-icon{
+	background: url(contact-icon-phone.png) top left no-repeat;
+	width:10%;
+	height:14px;
+	float:left;
+	margin:4px 0 0 0;
+}
+.email-icon{
+	background: url(contact-icon-message.png) top left no-repeat;
+	width:10%;
+	height:14px;
+	float:left;
+	margin:4px 0 0 0;
+}
+.contact-detail{
+	float:left;
+	width:90%;
+	padding:0;
+	margin:0;
+}
+
+.fb-icon{
+	height:22px;
+	width:22px;
+	background: url(social-icon-fb.png) center no-repeat;
+	float:left;
+	margin:10px 8px;
+}
+.pin-icon{
+	height:22px;
+	width:22px;
+	background: url(social-icon-pinterest.png) center no-repeat;
+	float:left;
+	margin:10px 8px;
+}
+.twitt-icon{
+	height:22px;
+	width:22px;
+	background: url(social-icon-twitt.png) center no-repeat;
+	float:left;
+	margin:10px 8px;
+}
+.gplus-icon{
+	height:22px;
+	width:22px;
+	background: url(social-icon-gplus.png) center no-repeat;
+	float:left;
+	margin:10px 8px;
+}
+.instagram-icon{
+	height:22px;
+	width:22px;
+	background: url(social-icon-instagram.png) center no-repeat;
+	float:left;
+	margin:10px 8px;
+}
+.extra{
+	text-align:center;
+	font-family: 'Droid Serif', georgia, serif;
+	text-transform:uppercase;
+	color:#80364d;
+	font-size:14px;
+	font-weight:bold;
+}
+/*-------------------------------------------------------------- */
+/* 7. footer
+----------------------------------------------- */
+#footer-main{
+	width:100%;
+	margin:0 auto;
+	height:auto;
+	padding:0;
+	position:relative;
+
+}
+.footer-container{
+	height:70px;
+	background:#C12126;
+}
+.footer-border{
+	background: url(foot-border.png);
+	height:11px;
+}
+.footer-text{
+	padding:25px 0 0 0;
+	color:#ffffff;
+	font-size:85%;
+}
+#couple{
+	margin:0 auto;
+	height:267px;
+	width:403px;
+	background: url(couple.png) bottom center no-repeat;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+
+}
+
+.mobile-footer{
+	background:#febcbc;
+	color:#ffffff;
+	padding:25px 15px;
+	text-align:center;
+	position:relative;
+	z-index:2;
+	
+	box-shadow:0px 0px 2px 0px #ff8282;
+	-webkit-box-shadow:0px 0px 2px 0px #ff8282;
+	-moz-box-shadow:0px 0px 2px 0px #ff8282;
+}
+
+.mobile-footer .footer-text{
+	padding:0;
+	color:#FFFFFF;
+}
+
+/*---------------------------------------*/
+/*-------------------------------------------------------------- */
+/* 8.Extras
+----------------------------------------------- */
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #fff;
+}
+
+.top-bar {
+	background-color: #f46149;
+	padding: 10px;
+	height: 45px;
+}
+
+body.admin-bar .slide-in,
+body.admin-bar .slide-in .sub-menu{
+	top:45px;
+}
+
+#sub-container {
+	position: relative;
+}
+
+#content {
+	font-size: 1.5em;
+	box-sizing: border-box;
+	text-align: justify;	
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
+
+.menu-icon {
+	padding: 5px;
+	border-radius: 3px;
+	background: #80364c;
+	cursor: pointer;
+	display: inline-block;
+	width: 40px;
+	height: auto;
+	position:absolute;
+	right:0;
+	top:0;	
+}
+
+.menu-icon .bar {
+	background: #ffb7b7;
+	border-radius: 3px;
+	width: 100%;
+	height: 3px;
+	margin-bottom: 5px;
+}
+.menu-icon .bar:last-child{
+	margin-bottom:0;
+}
+
+.menu-icon-close{
+	text-align:left;
+	padding: 15px 20px;
+}
+
+.slide-in ul .submenu-back span{
+	float:none;
+}
+.menu-icon-close span,
+.submenu-back span{
+	cursor:pointer;
+	color:#410e1d;
+}
+
+.slide-in,
+.slide-in ul ul {
+	background-color:#80374d;
+	font-family: 'Roboto Slab', serif;
+	width: 250px;
+	height:100%;
+	position: fixed;
+	top: 0;
+	bottom:0;
+	right: -300px;
+	-webkit-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+	z-index:10;
+	-webkit-box-shadow: 5px 0 5px rgba(0,0,0,.15);
+	-moz-box-shadow: 5px 0 5px rgba(0,0,0,.15);
+	box-shadow: 5px 0 5px rgba(0,0,0,.15);
+	z-index:11;
+
+}
+
+.slide-in ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.slide-in ul li {
+	font-weight: bold;
+	font-size: 1em;
+	border-bottom: 1px solid #702d41;
+	color: #ffb7b7;
+}
+.slide-in ul li a{
+	color:inherit;
+	padding: 15px 20px;
+	display:block;
+	position:relative;
+}
+
+.slide-in ul li a span{
+	float:right;
+	display:none;
+}
+.slide-in ul li.submenu-back a span{
+	display:inline-block;
+}
+
+.slide-in ul li.menu-item-has-children>a>span{
+	display:inline-block;
+}
+
+.slide-in ul li a:after{
+	display:inline-table;
+	content:"";
+	clear:both;
+}
+
+.slide-in ul li:hover {
+	background-color: #66293c;
+	color: #fff;
+}
+
+.slide-in.on,
+.slide-in ul ul.on{
+	right: 0px;
+}
+
+#wrapper.on {
+	left: 250px;
+}
+
+#main_navigation #primary_menu.fixed .nav-menu{
+	margin-top:0;
+}
+/*--------- Mobile Submenu --------------*/
+.slide-in ul ul{
+	z-index:11;
+	-webkit-box-shadow:none;
+	-moz-box-shadow:none;
+	box-shadow:none;
+}
+.thanks{
+	margin-top:25px;
+}
+.img-responsive {
+    max-width: 100%;
+    height: auto;
+	display:inline;
+}

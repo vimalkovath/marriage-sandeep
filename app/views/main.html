@@ -43,7 +43,7 @@
 
                     <!--    <li><a ng-href="#/about">About</a></li> -->
 
-                    <li class="current">
+                    <li class="">
                         <a ng-click="gotoElement('slidewrap')">Home</a>
                     </li>
                     <li class="menu-item-has-children">
@@ -169,17 +169,53 @@
             </div>
         </div>
     </div>
+<style>
+.ng-gallery {
+    width: 100%;
+    height: 205px;
+    overflow-x: scroll;
+    overflow-wrap: break-word;
+    overflow-y: hidden;
+    display: -webkit-inline-box;
+}
+#style-1::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	background-color: #F5F5F5;
+}
 
+.ng-gallery::-webkit-scrollbar {
+    width: 1em;
+}
+ 
+.ng-gallery::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(255,229,229,0.3);
+}
+ 
+.ng-gallery::-webkit-scrollbar-thumb {
+	background-color: #F90;	
+		border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #D62929;
+}
+
+
+
+
+
+
+</style>
     <div class="section" id="gallery">
 
         <div id="gallery-main">
             <!-- rsvp main -->
-            <div class="container">
+            
 			<h2> Gallery </h2>
 			
-				<ng-gallery images="main.images" thumbs-num="11">
+				<ng-gallery id="style16" images="main.images" thumbs-num="11">
 </ng-gallery>
-			</div>
+			
             <!-- rsvp container -->
         </div>
     </div>

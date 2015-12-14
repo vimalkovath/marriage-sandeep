@@ -29,12 +29,23 @@ app.controller('MainCtrl', function($scope, $location, anchorSmoothScroll) {
         {thumb: 'images/thumbs/012.jpg', img: 'images/012.jpg', description: 'Image 4'}
     ];
 
+	
+	
     $scope.gotoElement = function (eID){
       // set the location.hash to the id of
       // the element you wish to scroll to.
       $location.hash('bottom');
- 
-      // call $anchorScroll()
+	  
+	  
+	  if(eID =="slidewrap"){$scope.slidewrap=true;$scope.our_story=false;$scope.countdown_section=false;$scope.gallery=false;$scope.rsvp_section=false;$scope.contact_section=false;}
+	  if(eID =="our_story"){$scope.slidewrap=false;$scope.our_story=true;$scope.countdown_section=false;$scope.gallery=false;$scope.rsvp_section=false;$scope.contact_section=false;}
+	  if(eID =="countdown_section"){$scope.slidewrap=false;$scope.our_story=false;$scope.countdown_section=true;$scope.gallery=false;$scope.rsvp_section=false;$scope.contact_section=false;}
+	  if(eID =="gallery"){$scope.slidewrap=false;$scope.our_story=false;$scope.countdown_section=false;$scope.gallery=true;$scope.rsvp_section=false;$scope.contact_section=false;}
+	  if(eID =="rsvp_section"){$scope.slidewrap=false;$scope.our_story=false;$scope.countdown_section=false;$scope.gallery=false;$scope.rsvp_section=true;$scope.contact_section=false;}
+	  if(eID =="contact_section"){$scope.slidewrap=false;$scope.our_story=false;$scope.countdown_section=false;$scope.gallery=false;$scope.rsvp_section=false;$scope.contact_section=true;}
+	  
+     
+ // call $anchorScroll()
       anchorSmoothScroll.scrollTo(eID);
       
     };

@@ -43,22 +43,22 @@
 
                     <!--    <li><a ng-href="#/about">About</a></li> -->
 
-                    <li class="">
+                    <li ng-class="{current : slidewrap}">
                         <a ng-click="gotoElement('slidewrap')">Home</a>
                     </li>
-                    <li class="menu-item-has-children">
+                    <li class="menu-item-has-children" ng-class="{current : our_story}">
                         <a ng-click="gotoElement('our_story')">Our Story</a>
                     </li>
-                    <li class="menu-item-has-children">
+                    <li class="menu-item-has-children" ng-class="{current : countdown_section}">
                         <a ng-click="gotoElement('countdown_section')">The Wedding</a>
                     </li>
-                    <li>
+                    <li ng-class="{current : gallery}">
                         <a ng-click="gotoElement('gallery')">Gallery</a>
                     </li>
-                    <li>
+                    <li ng-class="{current : rsvp_section}">
                         <a ng-click="gotoElement('rsvp_section')">RSVP</a>
                     </li>
-                    <li>
+                    <li ng-class="{current : contact_section}">
 
                         <a ng-click="gotoElement('contact_section')">Contact</a>
                     </li>

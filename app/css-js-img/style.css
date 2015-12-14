@@ -1,21 +1,8 @@
-/*
-Theme Name: Enlance
-Theme URI: http://demo.puriwp.com/enlance
-Author: Minimal Themes
-Author URI: http://themeforest.net/user/minimalthemes
-Description: Responsive One-Page Wedding WordPress Theme
-Version: 1.0
-License:
-License URI:
-Text Domain: enlance
-Tags: wedding, one page, responsive, white, clean, theme options,
-
-*/
 
 /*------------------------------------------------------------------
 [Table of contents]
 
-1. Wordpress Core
+1. Core
 2. Main layout
 3. Header
 4. Main Menu
@@ -37,7 +24,7 @@ Tags: wedding, one page, responsive, white, clean, theme options,
 8. Extras
 -------------------------------------------------------------------*/
 
-/* 1. WordPress Core
+/* 1.Core
 -------------------------------------------------------------- */
 .alignnone {
     margin: 5px 20px 20px 0;
@@ -1587,3 +1574,27 @@ body.admin-bar .slide-in .sub-menu{
     height: auto;
 	display:inline;
 }
+
+/* ---------------- comment -------------- */
+.padding-t-25{padding-top:25px;}
+.padding-t-15{padding-top:15px;}
+.padding-t-5{padding-top:5px;}
+
+
+.padding-25{padding:25px;}
+
+
+.pro-pic-img{height:60px;}
+
+.t-a-l{text-align:left;}
+.t-a-r{text-align:right;}
+.t-a-c{text-align:center;}
+
+span.comment-date {
+    padding-left: 20px;
+    color: #999;
+    font-style: italic;
+}
+.comment-pro-name {
+    color: #E61827;
+ }
